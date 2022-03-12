@@ -6,6 +6,6 @@ namespace Industry.API.DataAccess;
 public class IndustryDBContext:DbContext
 {
     public IndustryDBContext(DbContextOptions<IndustryDBContext> options):base(options) {  }
-    public DbSet<Customer> Customers { get; set; }
-    public DbSet<Product> Products { get; set; }
+    public DbSet<Customer> Customer { get; set; }
+    public DbSet<Product> Product { get; set; }
 }
