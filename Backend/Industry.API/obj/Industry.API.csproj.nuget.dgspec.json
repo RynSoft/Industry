@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hakan/Documents/GitHub/Industry/Backend/Industry.API/Industry.API.csproj": {}
+    "/Users/serefseven/Desktop/Projects/dotnet-projects/Industry/Backend/Industry.API/Industry.API.csproj": {}
   },
   "projects": {
-    "/Users/hakan/Documents/GitHub/Industry/Backend/Industry.API/Industry.API.csproj": {
+    "/Users/serefseven/Desktop/Projects/dotnet-projects/Industry/Backend/Industry.API/Industry.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hakan/Documents/GitHub/Industry/Backend/Industry.API/Industry.API.csproj",
+        "projectUniqueName": "/Users/serefseven/Desktop/Projects/dotnet-projects/Industry/Backend/Industry.API/Industry.API.csproj",
         "projectName": "Industry.API",
-        "projectPath": "/Users/hakan/Documents/GitHub/Industry/Backend/Industry.API/Industry.API.csproj",
-        "packagesPath": "/Users/hakan/.nuget/packages/",
-        "outputPath": "/Users/hakan/Documents/GitHub/Industry/Backend/Industry.API/obj/",
+        "projectPath": "/Users/serefseven/Desktop/Projects/dotnet-projects/Industry/Backend/Industry.API/Industry.API.csproj",
+        "packagesPath": "/Users/serefseven/.nuget/packages/",
+        "outputPath": "/Users/serefseven/Desktop/Projects/dotnet-projects/Industry/Backend/Industry.API/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/hakan/.nuget/NuGet/NuGet.Config"
+          "/Users/serefseven/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -100,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
