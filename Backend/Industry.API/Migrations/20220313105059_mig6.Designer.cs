@@ -3,6 +3,7 @@ using System;
 using Industry.API.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Industry.API.Migrations
 {
     [DbContext(typeof(IndustryDBContext))]
-    partial class IndustryDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220313105059_mig6")]
+    partial class mig6
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -112,7 +114,7 @@ namespace Industry.API.Migrations
                     b.Property<string>("ShelfNo")
                         .HasColumnType("text");
 
-                    b.Property<Guid>("UnitId")
+                    b.Property<Guid?>("UnitId")
                         .HasColumnType("uuid");
 
                     b.HasKey("Id");
@@ -160,9 +162,7 @@ namespace Industry.API.Migrations
 
                     b.HasOne("Industry.API.Unit", "Unit")
                         .WithMany("Product")
-                        .HasForeignKey("UnitId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UnitId");
 
                     b.Navigation("Unit");
                 });
