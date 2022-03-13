@@ -9,7 +9,7 @@ namespace Industry.API
         }
         public string ProductName { get; set; }
         public string? ProductNumber { get; set; }
-        public double? Quntity { get; set; }
+        public double? Quantity { get; set; }
         public string? ShelfNo { get; set; }
         public string? Explanation { get; set; }
         public byte[] Image { get; set; }
