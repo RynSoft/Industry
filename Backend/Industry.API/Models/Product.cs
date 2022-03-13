@@ -13,11 +13,11 @@ namespace Industry.API
         public string? ShelfNo { get; set; }
         public string? Explanation { get; set; }
         public byte[] Image { get; set; }
-        public Guid CustomerId { get; set; }
-        [ForeignKey("CustomerId")]
-        public virtual Customer Customer { get; set; }
-        public Guid UnitId { get; set; }
-        [ForeignKey("UnitId")]
+        // public Guid CustomerId { get; set; }
+        // [ForeignKey("CustomerId")]
+        // public virtual Customer Customer { get; set; }
+        public Guid? UnitId { get; set; }
+        // [ForeignKey("UnitId")]
         public virtual Unit Unit { get; set; }
     }
 }
