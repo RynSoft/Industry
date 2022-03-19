@@ -3,16 +3,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Industry.API
 {
-    public class OfferHead : BaseFullModel<Guid>
+    public class Offers : BaseFullModel<Guid>
     {
-        public OfferHead()
+        public Offers()
         {
             Customer = new();
         }
-        public int  Number { get; set; }
-        public DateOnly Date { get; set; }
+        public string  OfferNo { get; set; } // teklif no 
+        public DateOnly OfferSentDate { get; set; }
         public string? Explanation { get; set; }
         public Guid CustomerId { get; set; }
+        public double Price { get; set; }
+        public string status { get; set; } // draft, sent, accepted, rejected
         [ForeignKey("CustomerId")]
         public virtual Customer Customer { get; set; }
 
